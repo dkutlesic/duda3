@@ -30,7 +30,7 @@ en: &DEFAULT_EN
         first: ""
         role: "Computer Science <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:
+          - url: mailto:dubravka97@gmail.com
             icon: fa fa-envelope
           - url: https://github.com/
             icon: fab fa-github
@@ -38,7 +38,7 @@ en: &DEFAULT_EN
         first: ""
         role: "Computer Science <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:
+          - url: mailto:dubravka97@gmail.com
             icon: fa fa-envelope
           - url: https://github.com/
             icon: fab fa-github
@@ -46,7 +46,7 @@ en: &DEFAULT_EN
         first: ""
         role: "Computer Science <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:
+          - url: mailto:dubravka97@gmail.com
             icon: fa fa-envelope
           - url: https://github.com/
             icon: fab fa-github
