@@ -7,26 +7,37 @@
         <h2 class="section-heading text-uppercase mb-3 tb-3">Introduction</h2>
 
         <div class="section-subheading text-justify lead">
-          The political scene of the United States of America is a jungle of diverse, opposing and often controversial
-          claims and opinions. One especially sensitive topic is climate change. A lot is said on this, but how much and
-          by who? We hope to follow the breadcrumb trail of data to find the true bellwethers that lead the
-          ostentatious public opinion of the US.
+          We have a BeerAdvocate dataset of both grades and textual reviews. There are different aspect that are taken into rating: Aroma, Appearance, Taste, Palate and Overall. I can’t think of this part right now, can be done at the end.
+
           <br><br>
-          <h5 class="section-heading mt-3 mb-3 tb-3">So why should we care?</h5>
+          <h5 class="section-heading mt-3 mb-3 tb-3">Motivation</h5>
           <div>
-            The short yet illustrious history of the United States of America has left its mark not only on the human
-            world, but the natural one as well. Leveraging the data from CAIT v2.0 we see the true historic impact on
-            the climate of the world from the actions of this country. <br><br>
+            One might ask, why would we dive into exploring a dataset that is self-explanatory: we have the ratings - we map them to beer quality. 
+            After all, don’t people know what beer they like and what they don’t like, so they will rate them accordingly? 
+            Well, that’s not always the case. In fact, there is a famous phenomenon called the *Halo Effect*, empirically proven by a psychologist Edward Thorndike at the 
+            beginning of the last century. It is the tendency for positive impressions of a person, company, brand, or product in one area to positively 
+            influence one’s opinion or feelings in other areas. For example, if we see an attractive, well groomed, and properly attired person, 
+            we will probably assume that they are a good person. This is exploited by felons on trials when they perfect their physical appearance 
+            in order to appeal to the jury. A marketing example would be the case of Apple, where the popularity of the iPhone generated enthusiasm 
+            towards other products of the Apple ecosystem.
+            Belowe, we see that the Halo Effect is very frequent and spreads over many areas. Therefore, it is a rational assumption that the effect is also present in our dataset 
+            of beer reviews. We aim to see if one of the beer aspects that the consumer particularly liked influenced its opinion towards other aspects i.e., led to him 
+            rating all beer aspects in a similar manner. A glimpse of our dataset shows that around 56% of reviews have numerical aspect ratings almost coincide:
+            
+ <br><br>
 
-            {% include world_co2.html %}
-            <footer class="blockquote-footer">
-              Source: <a href="https://www.cgdev.org/media/who-caused-climate-change-historically">CO2 emissions
-                excluding LUCF, 1850-2011 (CAIT v2.0)</a> </footer>
-            <br>
+            {% include aspects_same.html %}
 
-            With almost a quarter of all emissions, the US represents a major player. It is because of this that public
-            opinion on this problem is of international importance. In order to shed more light on the delicate topic,
-            we need to gain a better understanding of the mechanisms which are at work.
+            This is an indicator that we’re going in the right direction, as it’s statistically very unlikely that each beer aspect follows the same pattern.
+            Okay, we’re on a good start, but how do we know which aspect makes a difference and find out if there are some common for most of the graders? 
+            Well, we could see what the users *actually* had to say about the beer they rated. In other words, we will look for their opinion in the review text they wrote. 
+            That’s where our good old BERT-based sentiment analysis model (or BEERT as we like to call it) steps in. It provides us with the positive/neutral/negative sentiment 
+            score from the text, for each of the four aspects. If the users focus on one specific aspect, while ignoring the others or even speaking negatively about them, 
+            we will know that one makes a difference.
+
+            {% include small_grades.html %}
+            
+            
           </div><br>
 
           <h5 class="section-heading mt-3 mb-3 tb-3">Where does the trail of breadcrumbs begin?</h5>

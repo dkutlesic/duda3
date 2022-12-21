@@ -14,12 +14,13 @@
 
 remote_theme: raviriley/agency-jekyll-theme
 
-url    : "teamnerf" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "teamrakijada" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/ADA_Data_Story" # the subpath of your site, e.g. /blog
 
-title      : The Climate of Climate Change
-description: "A short data driven story on what is said and quoted in US politics on climate change. Who are the actors and what are they saying?"
-author     : Team NERF
+title      : Do we rate as we write?
+description: "Are there patterns in the way we write reviews despite the grade we give?
+	    		What do people write about the most and when?"
+author     : Team rakijada
 logo       : True
 
 locale: "en-US"

@@ -18,44 +18,44 @@ en: &DEFAULT_EN
     title: "Meet the team"
     section: team
     people:
-      - name: "atalija Mitic"
-        first: "N"
+      - name: "Dubravka Kutlesic"
+        first: ""
         role: "Computer Science <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:naca@ntec.ch
+          - url: mailto:dubravka97@gmail.com
             icon: fa fa-envelope
-          - url: https://github.com/natalijamitic
+          - url: https://github.com/dkutlesic
             icon: fab fa-github
-      - name: "dvin Maid"
-        first: "E"
+      - name: "Aleksa Milisavljevic"
+        first: ""
         role: "Computer Science <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:edvvin@mail.com
+          - url: mailto:
             icon: fa fa-envelope
-          - url: https://github.com/Edvvin
+          - url: https://github.com/
             icon: fab fa-github
-      - name: "adenko Pejic"
-        first: "R"
+      - name: "Lazar Radojevic"
+        first: ""
         role: "Computer Science <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:radenkopejicvaljevo@gmail.com
+          - url: mailto:
             icon: fa fa-envelope
-          - url: https://github.com/radenkoPejic
+          - url: https://github.com/
             icon: fab fa-github
-      - name: "ilip Carevic"
-        first: "F"
+      - name: "Luka Radic"
+        first: ""
         role: "Computer Science <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:filip.carevic11@gmail.com
+          - url: mailto:
             icon: fa fa-envelope
-          - url: https://github.com/fcarevic
+          - url: https://github.com/
             icon: fab fa-github
 
   footer:
     social:
       # - url: https://dlab.epfl.ch/teaching/fall2021/cs401/projects/
       #   icon: "fas fa-graduation-cap"
-      - url: https://github.com/epfl-ada/ada-2021-project-nerf
+      - url: https://github.com/epfl-ada/ada-2021-project-rakijada
         icon: "fab fa-github"
 en-US:
   <<: *DEFAULT_EN
