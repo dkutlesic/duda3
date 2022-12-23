@@ -47,10 +47,10 @@
         </p>
         <p class="text-justify lead">
             Let’s take a look at the following plot (<em>Figure 3</em>), depicting the number of positive/neutral/negative 
-          and the total number of sentiment indicators for each aspect of winner and loser beers. We can immediately 
-          notice that people are more expressive about beers they rated higher simply by looking at bar heights. But, 
-          a more important result is that Aroma and Taste clearly stand out – people have more polarized opinions 
-          when writing about these two aspects.
+            and the total number of sentiment indicators for each aspect of winner and loser beers. We can immediately notice 
+            that people are more expressive about beers they rated higher simply by looking at bar heights. 
+            But, a more important result is that Aroma and Taste clearly stand out – people have more polarized 
+            opinions when writing about these two aspects.
         </p>
 
         <div class="col-md-12">
@@ -59,6 +59,13 @@
             {% include indicators.html %}
           </div>
         </div>
+
+        <p class="text-justify lead">
+          <br>
+          This could not be concluded merely by looking at the 
+          ratings eCDF (<em>Figure 4</em>) for each aspect of winner beers – it seems that people grade all aspects similarly 
+          (halo effect seen in real life :))
+      </p>
 
         <div class="col-md-12">
           <h6 class="subheading text-center">Figure 4 : eCDF of aspect ratings for absolute winner </h6>
@@ -72,7 +79,7 @@
           It would also be interesting to see if some aspect sentiments are prevalent in winner beers. 
           To investigate this, we estimate the average difference and 95% confidence intervals for the difference
            in sentiment indicators between winner and loser beers for each aspect. We then visualize the results 
-           in <em>Figure 4</em>. For positive sentiments, all C.I.s are above zero, and for negative, all are 
+           in <em>Figure 5</em>. For positive sentiments, all C.I.s are above zero, and for negative, all are 
            below zero. But, this result isn’t that interesting – it’s expected that the positive sentiment is prevalent
             in winners, while the negative is prevalent in losers. What’s interesting is the intensity of the influence 
             of aspect sentiments on respective beer groups. Let’s look at positive indicators – clearly, Aroma and Taste 
