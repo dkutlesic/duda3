@@ -18,9 +18,9 @@
            which we'll explain in a bit. Before that, we have to introduce a preprocessing step. <br>
           Considering that numerical ratings don't convey proper information about users' attitude
           towards a beer, we give our BEERT model the context (one of the four beer aspects) and it 
-          provides us with positive/neutral/negative <i><u>sentiment score</i></u> for each aspect from the textual 
+          provides us with positive/neutral/negative <i><u>sentiment scores</i></u> for each aspect from the textual 
           review. The scores are in the [0,1] interval and sum up to 1. Since we want to determine if a 
-          certain aspect of sentiment exists, we convert each sentiment score to <i><u>indicators</i></u> by setting 
+          certain sentiment of an aspect exists, we convert each sentiment score to <i><u>indicators</i></u> by setting 
           up a threshold and comparing them to it. What's more, as we look for aspects with a strong sentiment, 
           our goal is to have only one of the three aspect-specific indicators present (which means that this 
           sentiment is dominant) or to have them all being zero (we are not certain that the sentiment is
