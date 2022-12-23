@@ -1,0 +1,208 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+ <script>
+    var word_bubbles = document.getElementById('word_bubbles'),
+    __x0 = [0, 0, 1],
+__y0 = [0, 0.1186056240844869, 0.1865006671143741],
+__marker_color0 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data0 = ['', '<b>Word: grapefruit <br>Coefficent: 0.12</b>', '<b>Word: great <br>Coefficent: 0.19</b>'],
+__size_of_bubble0 = [0, 75.90759941407161, 119.36042695319942],
+__font_size_in_bubble0 = [0, 9.0, 15.0],
+__x1 = [0, 0, 1, 2],
+__y1 = [0, 0.1045561981114066, 0.1526934110855923, 0.1353710798876091],
+__marker_color1 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data1 = ['', '<b>Word: grapefruit <br>Coefficent: 0.10</b>', '<b>Word: great <br>Coefficent: 0.15</b>', '<b>Word: tropical <br>Coefficent: 0.14</b>'],
+__size_of_bubble1 = [0, 66.91596679130022, 97.72378309477908, 86.63749112806983],
+__font_size_in_bubble1 = [0, 8.0, 12.0, 11.0],
+__x2 = [0, 0, 1, 2, 3, 4],
+__y2 = [0, 0.1227315396353934, 0.1041121494090119, 0.1220291897144304, 0.1175582750163679, 0.1010970269592436],
+__marker_color2 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data2 = ['', '<b>Word: bourbon <br>Coefficent: 0.12</b>', '<b>Word: vanilla <br>Coefficent: 0.10</b>', '<b>Word: smooth <br>Coefficent: 0.12</b>', '<b>Word: great <br>Coefficent: 0.12</b>', '<b>Word: rich <br>Coefficent: 0.10</b>'],
+__size_of_bubble2 = [0, 78.54818536665178, 66.63177562176762, 78.09868141723545, 75.23729601047546, 64.7020972539159],
+__font_size_in_bubble2 = [0, 10.0, 8.0, 10.0, 9.0, 8.0],
+__x3 = [0, 0, 1, 2, 3],
+__y3 = [0, 0.1318408127256876, 0.1090279906647516, 0.1632650960977831, 0.2201547137229912],
+__marker_color3 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data3 = ['', '<b>Word: nice <br>Coefficent: 0.13</b>', '<b>Word: citrus <br>Coefficent: 0.11</b>', '<b>Word: grapefruit <br>Coefficent: 0.16</b>', '<b>Word: great <br>Coefficent: 0.22</b>'],
+__size_of_bubble3 = [0, 84.37812014444006, 69.77791402544102, 104.48966150258119, 140.89901678271437],
+__font_size_in_bubble3 = [0, 11.0, 9.0, 13.0, 18.0],
+__x4 = [0, 0, 1, 2, 3],
+__y4 = [0, 0.1270965336576798, 0.1166133002958525, 0.1249282262187262, 0.1131289199589589],
+__marker_color4 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data4 = ['', '<b>Word: smooth <br>Coefficent: 0.13</b>', '<b>Word: bourbon <br>Coefficent: 0.12</b>', '<b>Word: great <br>Coefficent: 0.12</b>', '<b>Word: rich <br>Coefficent: 0.11</b>'],
+__size_of_bubble4 = [0, 81.34178154091508, 74.6325121893456, 79.95406477998476, 72.4025087737337],
+__font_size_in_bubble4 = [0, 10.0, 9.0, 10.0, 9.0],
+__x5 = [0, 0, 1, 2, 3],
+__y5 = [0, 0.1116748471696301, 0.1387283335339056, 0.1729954266915747, -0.1381899975222609],
+__marker_color5 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(213,94,0)'],
+__text_data5 = ['', '<b>Word: chocolate <br>Coefficent: 0.11</b>', '<b>Word: smooth <br>Coefficent: 0.14</b>', '<b>Word: great <br>Coefficent: 0.17</b>', '<b>Word: thin <br>Coefficent: -0.14</b>'],
+__size_of_bubble5 = [0, 71.47190218856326, 88.78613346169958, 110.71707308260781, 88.44159841424698],
+__font_size_in_bubble5 = [0, 9.0, 11.0, 14.0, 11.0],
+__x6 = [0, 0, 1],
+__y6 = [0, 0.1027753769784144, 0.1613720499357801],
+__marker_color6 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data6 = ['', '<b>Word: funk <br>Coefficent: 0.10</b>', '<b>Word: great <br>Coefficent: 0.16</b>'],
+__size_of_bubble6 = [0, 65.77624126618522, 103.27811195889927],
+__font_size_in_bubble6 = [0, 8.0, 13.0],
+__x7 = [0, 0, 1, 2, 3, 4, 5, 6],
+__y7 = [0, 0.1069061098623696, 0.1439920970663445, 0.1266466616002671, 0.2008145925618023, 0.1276682307259548, 0.1380383372211228, 0.1514601155529207],
+__marker_color7 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data7 = ['', '<b>Word: hops <br>Coefficent: 0.11</b>', '<b>Word: nice <br>Coefficent: 0.14</b>', '<b>Word: citrus <br>Coefficent: 0.13</b>', '<b>Word: great <br>Coefficent: 0.20</b>', '<b>Word: hoppy <br>Coefficent: 0.13</b>', '<b>Word: smooth <br>Coefficent: 0.14</b>', '<b>Word: pine <br>Coefficent: 0.15</b>'],
+__size_of_bubble7 = [0, 68.41991031191655, 92.15494212246048, 81.05386342417094, 128.52133923955347, 81.70766766461107, 88.34453582151859, 96.93447395386924],
+__font_size_in_bubble7 = [0, 9.0, 12.0, 10.0, 16.0, 10.0, 11.0, 12.0],
+__x8 = [0, 0, 1, 2, 3, 4, 5, 6],
+__y8 = [0, -0.1258383583764163, 0.2751173897493892, 0.1196342537102134, 0.2002352488543926, 0.1216336759422682, -0.1045456115451877, 0.1317227857402737],
+__marker_color8 = ['rgba(0,0,0,0)', 'rgb(213,94,0)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(213,94,0)', 'rgb(0,158,115)'],
+__text_data8 = ['', '<b>Word: like <br>Coefficent: -0.13</b>', '<b>Word: nice <br>Coefficent: 0.28</b>', '<b>Word: cherry <br>Coefficent: 0.12</b>', '<b>Word: tart <br>Coefficent: 0.20</b>', '<b>Word: medium <br>Coefficent: 0.12</b>', '<b>Word: thin <br>Coefficent: -0.10</b>', '<b>Word: red <br>Coefficent: 0.13</b>'],
+__size_of_bubble8 = [0, 80.53654936090643, 176.0751294396091, 76.56592237453657, 128.15055926681126, 77.84555260305166, 66.90919138892012, 84.30258287377518],
+__font_size_in_bubble8 = [0, 10.0, 22.0, 10.0, 16.0, 10.0, 8.0, 11.0],
+__x9 = [0, 0],
+__y9 = [0, 0.1623773332989234],
+__marker_color9 = ['rgba(0,0,0,0)', 'rgb(0,158,115)'],
+__text_data9 = ['', '<b>Word: great <br>Coefficent: 0.16</b>'],
+__size_of_bubble9 = [0, 103.92149331131097],
+__font_size_in_bubble9 = [0, 13.0],
+__x10 = [0, 0, 1],
+__y10 = [0, 0.1559223863975351, 0.1555553095040413],
+__marker_color10 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data10 = ['', '<b>Word: smooth <br>Coefficent: 0.16</b>', '<b>Word: great <br>Coefficent: 0.16</b>'],
+__size_of_bubble10 = [0, 99.79032729442247, 99.55539808258644],
+__font_size_in_bubble10 = [0, 12.0, 12.0],
+__x11 = [0, 0, 1, 2],
+__y11 = [0, 0.1072767848189952, 0.1672895178752392, 0.1499276040819803],
+__marker_color11 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data11 = ['', '<b>Word: nice <br>Coefficent: 0.11</b>', '<b>Word: great <br>Coefficent: 0.17</b>', '<b>Word: smooth <br>Coefficent: 0.15</b>'],
+__size_of_bubble11 = [0, 68.65714228415693, 107.06529144015309, 95.9536666124674],
+__font_size_in_bubble11 = [0, 9.0, 13.0, 12.0],
+__x12 = [0, 0, 1],
+__y12 = [0, 0.1058704142898329, 0.1787868515464275],
+__marker_color12 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data12 = ['', '<b>Word: nice <br>Coefficent: 0.11</b>', '<b>Word: great <br>Coefficent: 0.18</b>'],
+__size_of_bubble12 = [0, 67.75706514549306, 114.4235849897136],
+__font_size_in_bubble12 = [0, 8.0, 14.0],
+__x13 = [0, 0, 1],
+__y13 = [0, 0.192431848250114, 0.1537350675310791],
+__marker_color13 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data13 = ['', '<b>Word: nice <br>Coefficent: 0.19</b>', '<b>Word: refreshing <br>Coefficent: 0.15</b>'],
+__size_of_bubble13 = [0, 123.15638288007295, 98.39044321989063],
+__font_size_in_bubble13 = [0, 15.0, 12.0],
+__x14 = [0, 0, 1, 2, 3],
+__y14 = [0, 0.1031644160782097, 0.1728646463509959, 0.160824297589515, 0.1603449442105835],
+__marker_color14 = ['rgba(0,0,0,0)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)', 'rgb(0,158,115)'],
+__text_data14 = ['', '<b>Word: hops <br>Coefficent: 0.10</b>', '<b>Word: bourbon <br>Coefficent: 0.17</b>', '<b>Word: great <br>Coefficent: 0.16</b>', '<b>Word: smooth <br>Coefficent: 0.16</b>'],
+__size_of_bubble14 = [0, 66.0252262900542, 110.63337366463739, 102.9275504572896, 102.62076429477345],
+__font_size_in_bubble14 = [0, 8.0, 14.0, 13.0, 13.0],
+    __data = [{x:__x0, y:__y0, type:'scatter', hoverinfo:'text', name: 'American IPA',mode:'markers+text', marker:{size:__size_of_bubble0, color:__marker_color0} , text: __text_data0, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble0, color: "white"}},
+{x:__x1, y:__y1, type:'scatter', hoverinfo:'text', name: 'American Double / Imperial IPA',mode:'markers+text', marker:{size:__size_of_bubble1, color:__marker_color1} ,visible:'legendonly', text: __text_data1, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble1, color: "white"}},
+{x:__x2, y:__y2, type:'scatter', hoverinfo:'text', name: 'American Double / Imperial Stout',mode:'markers+text', marker:{size:__size_of_bubble2, color:__marker_color2} ,visible:'legendonly', text: __text_data2, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble2, color: "white"}},
+{x:__x3, y:__y3, type:'scatter', hoverinfo:'text', name: 'American Pale Ale (APA)',mode:'markers+text', marker:{size:__size_of_bubble3, color:__marker_color3} ,visible:'legendonly', text: __text_data3, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble3, color: "white"}},
+{x:__x4, y:__y4, type:'scatter', hoverinfo:'text', name: 'Russian Imperial Stout',mode:'markers+text', marker:{size:__size_of_bubble4, color:__marker_color4} ,visible:'legendonly', text: __text_data4, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble4, color: "white"}},
+{x:__x5, y:__y5, type:'scatter', hoverinfo:'text', name: 'American Porter',mode:'markers+text', marker:{size:__size_of_bubble5, color:__marker_color5} ,visible:'legendonly', text: __text_data5, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble5, color: "white"}},
+{x:__x6, y:__y6, type:'scatter', hoverinfo:'text', name: 'Saison / Farmhouse Ale',mode:'markers+text', marker:{size:__size_of_bubble6, color:__marker_color6} ,visible:'legendonly', text: __text_data6, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble6, color: "white"}},
+{x:__x7, y:__y7, type:'scatter', hoverinfo:'text', name: 'American Amber / Red Ale',mode:'markers+text', marker:{size:__size_of_bubble7, color:__marker_color7} ,visible:'legendonly', text: __text_data7, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble7, color: "white"}},
+{x:__x8, y:__y8, type:'scatter', hoverinfo:'text', name: 'Fruit / Vegetable Beer',mode:'markers+text', marker:{size:__size_of_bubble8, color:__marker_color8} ,visible:'legendonly', text: __text_data8, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble8, color: "white"}},
+{x:__x9, y:__y9, type:'scatter', hoverinfo:'text', name: 'American Wild Ale',mode:'markers+text', marker:{size:__size_of_bubble9, color:__marker_color9} ,visible:'legendonly', text: __text_data9, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble9, color: "white"}},
+{x:__x10, y:__y10, type:'scatter', hoverinfo:'text', name: 'Belgian Strong Dark Ale',mode:'markers+text', marker:{size:__size_of_bubble10, color:__marker_color10} ,visible:'legendonly', text: __text_data10, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble10, color: "white"}},
+{x:__x11, y:__y11, type:'scatter', hoverinfo:'text', name: 'Tripel',mode:'markers+text', marker:{size:__size_of_bubble11, color:__marker_color11} ,visible:'legendonly', text: __text_data11, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble11, color: "white"}},
+{x:__x12, y:__y12, type:'scatter', hoverinfo:'text', name: 'Belgian Strong Pale Ale',mode:'markers+text', marker:{size:__size_of_bubble12, color:__marker_color12} ,visible:'legendonly', text: __text_data12, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble12, color: "white"}},
+{x:__x13, y:__y13, type:'scatter', hoverinfo:'text', name: 'Witbier',mode:'markers+text', marker:{size:__size_of_bubble13, color:__marker_color13} ,visible:'legendonly', text: __text_data13, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble13, color: "white"}},
+{x:__x14, y:__y14, type:'scatter', hoverinfo:'text', name: 'American Strong Ale',mode:'markers+text', marker:{size:__size_of_bubble14, color:__marker_color14} ,visible:'legendonly', text: __text_data14, textposition: 'middle center', textfont: {family: "sans serif", size: __font_size_in_bubble14, color: "white"}}],
+    __layout = {
+        showlegend: true,
+        hovermode:'closest',
+		  yaxis: {dtick: 0.1, range: [-0.51, 0.51], zeroline: false, title: 'Coefficient'},
+      xaxis: {dtick: 1, tick0: 0, showticklabels: false, zeroline: false, title: 'Keyword'},
+		  height: 700,
+      width: 1200
+     };
+
+var seasonal_trends = document.getElementById('seasonal_trends'),
+    _x = ['January','February','March','April','May','June','July','August','September','October','November','December'],
+    _y0 = [3.797224523612262, 3.837275424427229, 3.8067283364958886, 3.797135183527305, 3.79144211113176, 3.772604399701715, 3.7803872521771353, 3.743545534924845, 3.767342631675537, 3.7584298365122617, 3.752056672760512, 3.752687705912953],
+_y1 = [4.099762733312243, 4.110208923949218, 4.092507212762347, 4.073213318080558, 4.06108972460764, 4.047408167070669, 4.028980404164115, 4.035195154777927, 4.049337932128132, 4.05102455683851, 4.052131361461505, 4.0691266133502255],
+_y2 = [4.134069157147268, 4.138023412877082, 4.151025468605531, 4.172249021570948, 4.141873844257242, 4.15358891675624, 4.141159402395357, 4.137471465019471, 4.119395280235988, 4.146145331423362, 4.142718822618125, 4.123784560750824],
+_y3 = [3.9512619669277633, 3.954029058684116, 3.945505866725703, 3.939013741440324, 3.94140953561468, 3.933172410710295, 3.934850652834913, 3.94917555771096, 3.9548637451129136, 3.981881161737277, 3.982252421959096, 3.957095167733815],
+_y4 = [3.858802095194717, 3.868628416646146, 3.852832376325088, 3.872151420239767, 3.856102341349719, 3.850902828514769, 3.844053215964789, 3.850091309485444, 3.8615424430641823, 3.872910491997629, 3.866775473630312, 3.853056940435581],
+_y5 = [3.921676470588235, 3.910702113156101, 3.8962004405286335, 3.921880227500836, 3.92589833479404, 3.917439534460811, 3.932820185826198, 3.923560984638164, 3.920836751435603, 3.912428687856561, 3.903760903760904, 3.8972325870646767],
+_y6 = [3.93435998252512, 3.9021484375, 3.9053814713896458, 3.938603282750077, 3.914761751448809, 3.911596958174905, 3.881153305203938, 3.91546319126453, 3.869972122660295, 3.870391705069125, 3.949651526075463, 3.9314918851435703],
+_y7 = [4.068375059045819, 4.102697352140559, 4.089929328621908, 4.09692400482509, 4.097166206750159, 4.067764804003336, 4.057637025680338, 4.061421265714895, 4.083705357142857, 4.072463768115942, 4.067431067431068, 4.034662265109192],
+_y8 = [3.930777061418392, 3.940152706040872, 3.927455608001798, 3.931234256926952, 3.939472252448313, 3.946660622544576, 3.9439389265885256, 3.964692307692308, 3.957377049180328, 3.951892991239049, 3.932801177536232, 3.925059241706161],
+_y9 = [3.905344533722912, 3.905068078668684, 3.911292613636364, 3.9189424753050552, 3.909227467811159, 3.905172413793104, 3.89448006690828, 3.8917256011315415, 3.897185430463576, 3.8747256193164, 3.8944461729931543, 3.8820754716981134],
+_y10 = [3.4477326654363303, 3.448483560090703, 3.402630900180552, 3.401990632318501, 3.422164640223241, 3.453219696969697, 3.460017969451932, 3.481069592724397, 3.4661400930688218, 3.4774300932090547, 3.44457703526916, 3.419732002101944],
+_y11 = [4.070836026718379, 4.068625621890547, 4.0680628272251305, 4.082723011571701, 4.090408223635557, 4.055843923393592, 4.062966417910448, 4.052149366085579, 4.053881621273858, 4.061817003148732, 4.064047165665739, 4.066063630692452],
+_y12 = [3.964409421544856, 3.961958604829437, 3.955941931127617, 3.951488952929875, 3.939230769230769, 3.939910979228487, 3.936331702421277, 3.950995879120879, 3.933182284541724, 3.9475128017556695, 3.9394573040264538, 3.955726204019719],
+_y13 = [3.93968253968254, 3.9134401114206128, 3.910258098498815, 3.9239820964481664, 3.9356806210146935, 3.923741435805779, 3.896137026239067, 3.8879406050513454, 3.9067727123647096, 3.8995090518563975, 3.910367001254705, 3.926983910553586],
+_y14 = [3.725376308900524, 3.7198641765704585, 3.699956165984805, 3.7243037611254666, 3.713636363636364, 3.74391859344894, 3.762765500965458, 3.7622739018087854, 3.771643253838615, 3.755805243445693, 3.700344952795933, 3.690634864959663],
+    _data = [{x:_x, y:_y0, type:'scatter', name: 'American Amber / Red Ale',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'}},
+{x:_x, y:_y1, type:'scatter', name: 'American Double / Imperial IPA',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y2, type:'scatter', name: 'American Double / Imperial Stout',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y3, type:'scatter', name: 'American IPA',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y4, type:'scatter', name: 'American Pale Ale (APA)',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y5, type:'scatter', name: 'American Porter',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y6, type:'scatter', name: 'American Strong Ale',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y7, type:'scatter', name: 'American Wild Ale',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y8, type:'scatter', name: 'Belgian Strong Dark Ale',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y9, type:'scatter', name: 'Belgian Strong Pale Ale',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y10, type:'scatter', name: 'Fruit / Vegetable Beer',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y11, type:'scatter', name: 'Russian Imperial Stout',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y12, type:'scatter', name: 'Saison / Farmhouse Ale',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y13, type:'scatter', name: 'Tripel',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'},
+{x:_x, y:_y14, type:'scatter', name: 'Witbier',mode:'line', line:{ color:'rgb(0,114,178)'},marker:{size:8, color:'rgb(0,114,178)'},visible:'legendonly'}],
+    _layout = {
+        showlegend: true,
+        hovermode:'closest',
+		  yaxis: {dtick: 0.01},
+		  height: 600
+     };
+
+Plotly.newPlot('seasonal_trends', _data, _layout);
+Plotly.newPlot('word_bubbles', __data, __layout);
+
+seasonal_trends.on('plotly_legendclick', function(_data){
+  var _update1 = {'visible':'legendonly'};
+  var _update2 = {'visible': true};
+  Plotly.restyle('seasonal_trends', _update1,[0]);
+  Plotly.restyle('seasonal_trends', _update1,[1]);
+  Plotly.restyle('seasonal_trends', _update1,[2]);
+  Plotly.restyle('seasonal_trends', _update1,[3]);
+  Plotly.restyle('seasonal_trends', _update1,[4]);
+  Plotly.restyle('seasonal_trends', _update1,[5]);
+  Plotly.restyle('seasonal_trends', _update1,[6]);
+  Plotly.restyle('seasonal_trends', _update1,[7]);
+  Plotly.restyle('seasonal_trends', _update1,[8]);
+  Plotly.restyle('seasonal_trends', _update1,[9]);
+  Plotly.restyle('seasonal_trends', _update1,[10]);
+  Plotly.restyle('seasonal_trends', _update1,[11]);
+  Plotly.restyle('seasonal_trends', _update1,[12]);
+  Plotly.restyle('seasonal_trends', _update1,[13]);
+  Plotly.restyle('seasonal_trends', _update1,[14]);
+  Plotly.restyle('seasonal_trends', _update2,[_data.curveNumber]);
+  return false;
+});
+word_bubbles.on('plotly_legendclick', function(__data){
+  var __update1 = {'visible':'legendonly'};
+  var __update2 = {'visible': true};
+  Plotly.restyle('word_bubbles', __update1,[0]);
+  Plotly.restyle('word_bubbles', __update1,[1]);
+  Plotly.restyle('word_bubbles', __update1,[2]);
+  Plotly.restyle('word_bubbles', __update1,[3]);
+  Plotly.restyle('word_bubbles', __update1,[4]);
+  Plotly.restyle('word_bubbles', __update1,[5]);
+  Plotly.restyle('word_bubbles', __update1,[6]);
+  Plotly.restyle('word_bubbles', __update1,[7]);
+  Plotly.restyle('word_bubbles', __update1,[8]);
+  Plotly.restyle('word_bubbles', __update1,[9]);
+  Plotly.restyle('word_bubbles', __update1,[10]);
+  Plotly.restyle('word_bubbles', __update1,[11]);
+  Plotly.restyle('word_bubbles', __update1,[12]);
+  Plotly.restyle('word_bubbles', __update1,[13]);
+  Plotly.restyle('word_bubbles', __update1,[14]);
+  Plotly.restyle('word_bubbles', __update2,[__data.curveNumber]);
+  return false;
+});
+  </script>
+</body>
