@@ -44,7 +44,7 @@ en: &DEFAULT_EN
             icon: fab fa-github
       - name: "Luka Radic"
         first: ""
-        role: "Electrical and Electronic Engineering <i class='fas fa-laptop'></i>"
+        role: "Electrical Engineering <i class='fas fa-laptop'></i>"
         social:
           - url: mailto:lukaradic9@gmail.com
             icon: fa fa-envelope
