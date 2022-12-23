@@ -74,17 +74,47 @@
           The size of a keyword corresponds with the number of styles it is associated with. It’s not shocking 
           that generic words like great and nice appear in reviews the most often; we extract real information 
           from overall keywords relating to a specific aspect:
+
+          <li class="lead"><u><i>Taste</i></u>: grapefruit, citrus, cherry, chocolate, hops, hoppy, vanilla, tart, pine, funk, bourbon, tropical</li>
+          <li class="lead"><u><i>Aroma</i></u>: grapefruit, citrus, cherry, chocolate, hops, hoppy, vanilla, pine, funk, bourbon, tropical</li>
+          <li class="lead"><u><i>Palate</i></u>: smooth, refreshing, rich, tropical, thin</li>
+          <li class="lead"><u><i>Appearance</i></u>: red, tropical</li>
+        </p>
+      </div>
+
+      <div class="col-md-12">
+        <p class="text-justify lead">
+          <br>
+          In the interactive plot below (<em>Figure 7</em>), you can click on any of the 15 beer
+           styles observed and visualize the contribution of each overall keyword to the style’s Rating.
+            Note that the p-values for regression coefficients are all less than 10e-39.
         </p>
       </div>
 
     <br>
 
       <div class="col-md-12">
-        <h6 class="subheading text-center">Figure 7 :  </h6>
+        <h6 class="subheading text-center">Figure 7 :  Keywords and coefficients per style</h6>
         <div id="word_bubbles">
           
         </div>
       </div>
+
+      <div class="col-md-12">
+        <p class="text-justify lead">
+          <br>
+          Based on this analysis, we derive the following conclusions:
+          <li class="lead"> Most overall keywords relate to Aroma and Taste, which co-aligns with
+             ABSA results that people talk about these aspects the most. What’s more, all regressor
+              coefficients related to these keywords increase the Rating proving that Aroma and Taste
+               are crucial when giving a high grade.</li>
+          <li class="lead">There were only two keywords negatively influencing the grade that stood 
+            out – like and thin – so we conclude that people more often write about 
+            beer characteristics they liked.</li>
+
+        </p>
+      </div>
+
 
       <div class="col-md-12">
         <h6 class="subheading text-center">Figure 7 :  </h6>
