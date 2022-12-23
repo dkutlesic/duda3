@@ -15,7 +15,7 @@ en: &DEFAULT_EN
     section: conclusion
 
   team:
-    title: "Meet the team"
+    title: "The team"
     section: team
     people:
       - name: "Dubravka Kutlesic"
@@ -30,25 +30,25 @@ en: &DEFAULT_EN
         first: ""
         role: "Computer Science <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:dubravka97@gmail.com
+          - url: mailto:aleksamilis@gmail.com
             icon: fa fa-envelope
-          - url: https://github.com/
+          - url: https://github.com/aleksamilisavljevic
             icon: fab fa-github
       - name: "Lazar Radojevic"
         first: ""
         role: "Computer Science <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:dubravka97@gmail.com
+          - url: mailto:laza99umka@gmail.com
             icon: fa fa-envelope
-          - url: https://github.com/
+          - url: https://github.com/lazarr19
             icon: fab fa-github
       - name: "Luka Radic"
         first: ""
-        role: "Computer Science <i class='fas fa-laptop'></i>"
+        role: "Electrical and Electronic Engineering <i class='fas fa-laptop'></i>"
         social:
-          - url: mailto:dubravka97@gmail.com
+          - url: mailto:lukaradic9@gmail.com
             icon: fa fa-envelope
-          - url: https://github.com/
+          - url: https://github.com/rluka
             icon: fab fa-github
 
   footer:
