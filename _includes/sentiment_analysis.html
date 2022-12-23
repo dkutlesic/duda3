@@ -153,7 +153,7 @@
            10% more in one of these months – only they have the possibility to make a difference in ratings. 
            Finally, as before, we convert them to binary indicators, fit a linear regression on all the reviews 
            for a specific style, and decide which become <u><i>seasonal keywords</i></u> by looking at their p-values and 
-           contributions to the Rating. <br>
+           contributions to the Rating. All kept regressor coefficients have p-values less than 10<sup>-28</sup>. <br>
         </p>
       </div>
 
@@ -177,6 +177,34 @@
       <div class="col-md-12 residuals">
         <img src="assets/img/word_cloud_seasonal.png" alt="" srcset="">
       </div>
+
+      <div class="col-md-12 residuals">
+        <pre>
+          <br>
+          VANILLA
+          -----------------------------------------------------------------------------------------------------
+          Style                                  Coefficient         MinMonth          MaxMonth  
+          -----------------------------------------------------------------------------------------------------
+          American Double / Imperial Stout         0.116201               9                 4
+          Russian Imperial Stout	           0.135693               8                 5
+          American Strong Ale	                   0.145952               9                11
+
+          FRESH/REFRESHING
+          -----------------------------------------------------------------------------------------------------
+          Style                                  Coefficient         MinMonth          MaxMonth  
+          -----------------------------------------------------------------------------------------------------
+          American IPA                            0.135115               7                 10
+          American Pale Ale (APA)	          0.186084               1                 10
+          Witbier	                          0.168595              12                  9
+
+          CARAMEL
+          -----------------------------------------------------------------------------------------------------
+          Style                                  Coefficient         MinMonth          MaxMonth  
+          -----------------------------------------------------------------------------------------------------
+          American Double / Imperial IPA         -0.118599               7                 2
+        </pre>
+      </div>
+
 
       <div class="col-md-12">
         <p class="text-justify lead">
