@@ -24,7 +24,11 @@
           up a threshold and comparing them to it. What's more, as we look for aspects with a strong sentiment, 
           our goal is to have only one of the three aspect-specific indicators present (which means that this 
           sentiment is dominant) or to have them all being zero (we are not certain that the sentiment is
-          polar enough). To be very confident in our results, we set up a threshold of 0.9.
+          polar enough). To be very confident in our results, we set up a threshold of 0.9. <br><br>
+
+          Note that, due to BEERT's performance being computationaly expensive, we're
+           working with a subset of our BeerAdvocate data - we keep only the reviews with 
+           fewer than 2000 words. Even with this approach, BEERT needed around 60h to extract the sentiments.
         </p>
       </div>
 
@@ -45,6 +49,8 @@
              <li class="lead">are given in the <u><i>same season</i></u>, to cancel out any possible underlying seasonal effects <br> <br></li>  
         </p>
         <p class="text-justify lead">
+            In total, we are working with around 62k of matched reviews.
+            <br><br>
             Let’s take a look at the following plot (<em>Figure 3</em>), depicting the number of positive/neutral/negative 
             and the total number of sentiment indicators for each aspect of winner and loser beers. We can immediately notice 
             that people are more expressive about beers they rated higher simply by looking at bar heights. 
