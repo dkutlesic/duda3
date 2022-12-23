@@ -11,12 +11,10 @@ en: &DEFAULT_EN
     - title: "Introduction"
       section: introduction
     - dropdown:
-      - title: "How much is said?"
+      - title: "Aspect based sentiment analysis"
         section: basic_analysis
       - title: "Keywords"
         section: sentiment_analysis
-      - title: "When are they talking?"
-        section: timeline_analysis
     - title: "Conclusion"
       section: conclusion
     - title: "Team"
