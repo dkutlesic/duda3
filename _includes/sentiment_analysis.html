@@ -17,8 +17,8 @@
       <div class="col-md-12">
         <div class="section-subheading text-justify lead">
           ABSA showed that Aroma and Taste are key when people write a review. These aspects 
-          influence the reviews overall. Now we want to go deeper to find out which *aspect
-           characteristics* map into a high rating. We cannot conduct this analysis globally
+          influence the reviews overall. Now we want to go deeper to find out which <u><i>aspect
+           characteristics</i></u> map into a high rating. We cannot conduct this analysis globally
             since different beers may have different traits. For example, we expect one to
              mention citrus notes for a Grape beer and not for an IPA, which is characterized 
              as bitter. That’s why we conduct our analysis for beer styles individually,
@@ -27,31 +27,21 @@
         </div>
       </div>
 
-      <div class="col-md-12">
-        <p class="text-justify lead">
-          Let us inspect the positive and negative sentiment of climate change quotes in respect to political parties.
-        </p>
-      </div>
-
-      <div class="col-md-6">
-        <h6 class="subheading text-center">Sentiment climate change quotes for Democratic Party</h6>
-      </div>
-      <div class="col-md-6">
-        <h6 class="subheading text-center">Sentiment climate change quotes for Republican Party</h6>
-      </div>
-      <div class="col-md-6">
-        <div id="pie_sentiment_democrats"></div>
-      </div>
-      <div class="col-md-6">
-        <div id="pie_sentiment_republicans"></div>
-      </div>
-
       <br><br>
 
       <div class="col-md-12">
         <p class="text-justify lead">
-          Here we can see that here that there is a slightly higher tendency of democrats to make positive claims about
-          climate change than Republicans. Nevertheless, the difference is not too prominent to make a valid statement.
+          To answer our question, we start by investigating which style-specific 
+          keywords extracted from review text correlate with a high rating. 
+          We call these <u><i>overall keywords</i></u>. For each style, we take the top 100 most 
+          frequent words in all reviews of that style from which stopwords are excluded. 
+          Now, similarly to ABSA, we construct binary indicators for each keyword, denoting 
+          its presence in each style-specific review. To see how each keyword influences 
+          the grades, we conduct <u><i>linear regression</i></u> with Rating (an aggregate of 
+          numerical aspect grades) as the target and indicators as covariates. Finally,
+           we obtain <u><i>overall keywords</i></u> as those whose coefficients we are certain in 
+           (p-value &lt; 0.05) and for which the change in Rating is greater than 0.1 
+           when having (or not) it in the formula.  
         </p>
       </div>
     </div>
