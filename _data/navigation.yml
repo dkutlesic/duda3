@@ -13,7 +13,7 @@ en: &DEFAULT_EN
     - dropdown:
       - title: "How much is said?"
         section: basic_analysis
-      - title: "What are they saying?"
+      - title: "Keywords"
         section: sentiment_analysis
       - title: "When are they talking?"
         section: timeline_analysis
