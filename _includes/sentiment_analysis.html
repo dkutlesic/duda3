@@ -23,11 +23,14 @@
              mention citrus notes for a Grape beer and not for an IPA, which is characterized 
              as bitter. That’s why we conduct our analysis for beer styles individually,
               but only on those with at least 40k reviews, so that we have enough data points
-               to declare the results valid. There are 15 such beer styles in the dataset.
+               to declare the results valid. There are 15 such beer styles in the dataset. <br>
         </div>
       </div>
 
+      <br><br>
+
       <div class="col-md-12">
+        <br>
         <h6 class="subheading text-center">Figure 6 : Number of reviews for the most rated styles </h6>
         <div>
           {% include popular_styles.html %}
@@ -51,16 +54,20 @@
            (p-value &lt; 0.05) and for which the change in Rating is greater than 0.1 
            when having (or not) it in the formula.  
         </p>
+
       </div>
-    </div>
 
-    <div class="col-md-12 residuals">
-      <img src="assets/img/word_cloud.png" alt="" srcset="">
-    </div>
+      <div class="col-md-12">
+        <h6 class="subheading text-center">Figure 8 : Monthly ratings trends for the most rated styles </h6>
+        <div>
+          {% include seasonal_trends.html %}
+        </div>
+      </div>
 
+
+
+    </div>
     <br>
-    
-
   </div>
 </section>
 <!-- End Sentiment Analysis -->
