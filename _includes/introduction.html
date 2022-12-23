@@ -50,6 +50,31 @@
               </div>
             </div>
 
+            <br>
+            Furthermore, the problem is hard due to the psychological phenomenon called the 
+            <a
+          href="https://en.wikipedia.org/wiki/Halo_effect">Halo Effect</a> - the tendency for positive impressions of a person, company, brand, or product in one 
+             area to positively influence one’s opinion or feelings in other areas. For example, 
+             if a person is amazed by the beer bottle, they might transfer their pleasure to the taste.
+             Or if the aroma reminds them of their mom’s cookies, they will probably rate 
+             the beer more than it deserves. In fact, a glimpse of our dataset shows 
+             that around 56% of reviews have numerical aspect ratings that almost coincide <em>Figure 2</em> 
+             – it is not very likely that each beer aspect follows the same pattern.
+            
+          
+
+            <div class="col-md-12">
+              <h6 class="subheading text-center">Figure 2</h6>
+              <div>
+                {% include aspects_same.html %}
+              </div>
+            </div>
+
+            So, to overcome these phenomena, we use our good old 
+            <a href="https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis">BERT-based 
+              aspect sentiment analysis model</a> (or BEERT as we like to call it) to find out what 
+              people <u><i>really</i></u> had to say about the beer, aspect-wise. 
+
 
           <h5 class="section-heading mt-3 mb-3 tb-3">Motivation</h5>
           <div>
