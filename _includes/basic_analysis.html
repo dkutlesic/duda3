@@ -1,4 +1,3 @@
-<!-- Portfolio Grid -->
 <section class="bg-light page-section" id="basic_analysis">
   <div class="container">
     <div class="row">
@@ -10,7 +9,6 @@
       </div>
     </div>
     
-    <!-- Age Analysis -->
     <div class="row">
       <div class="col-md-12">
         <p class="text-justify lead">
@@ -47,18 +45,37 @@
              <li class="lead"><u><i>do not differ largely in size</i></u>, due to the BEERT inferring higher sentiment scores for longer reviews <br></li>
              <li class="lead">are given in the <u><i>same season</i></u>, to cancel out any possible underlying seasonal effects <br> <br></li>  
         </p>
+        <p class="text-justify lead">
+            Let’s take a look at the following plot (<em>Figure 3</em>), depicting the number of positive/neutral/negative 
+          and the total number of sentiment indicators for each aspect of winner and loser beers. We can immediately 
+          notice that people are more expressive about beers they rated higher simply by looking at bar heights. But, 
+          a more important result is that Aroma and Taste clearly stand out – people have more polarized opinions 
+          when writing about these two aspects.
+        </p>
+
+        <div class="col-md-12">
+          <h6 class="subheading text-center">Figure 3 : Number of indicators per aspect per sentiment </h6>
+          <div>
+            {% include indicators.html %}
+          </div>
+        </div>
+
         <br>
         <p class="text-justify lead">
-          After getting a p-value = 1.79e-05 (which is less than the ordinary 0.01), we can conclude that the difference in
-          the mean values is significant, therefore these two distributions most likely come from two different
-          distributions - where the mean for females is a bit lower than the one for males.
+          It would also be interesting to see if some aspect sentiments are prevalent in winner beers. 
+          To investigate this, we estimate the average difference and 95% confidence intervals for the difference
+           in sentiment indicators between winner and loser beers for each aspect. We then visualize the results 
+           in <em>Figure 4</em>. For positive sentiments, all C.I.s are above zero, and for negative, all are 
+           below zero. But, this result isn’t that interesting – it’s expected that the positive sentiment is prevalent
+            in winners, while the negative is prevalent in losers. What’s interesting is the intensity of the influence 
+            of aspect sentiments on respective beer groups. Let’s look at positive indicators – clearly, Aroma and Taste 
+            stand out compared to the other two. But what does this mean? Imagine an edge case when all winners have a 
+            positive indicator for an aspect “1” and all losers have “0”. This would mean we can only look at that specific 
+            aspect and tell if a beer is a winner or a loser, regardless of the numerical ratings. Well, Aroma and 
+            Taste are the closest to that edge case, so we conclude that they have the strongest influence on better-rated beers.
+             Similarly, negative Taste sentiment is the best indicator of a beer being rated lower.
         </p>
-        <p class="text-justify lead">
-          This could lead us to the conclusion that older female politicians talk less about climate change than their
-          male colleagues.
-          However, taking the first plot into the account, we can observe a much bigger number of older male politicians
-          than females - making the older female politicians, to some extent, underrepresented.
-        </p>
+        <br>
       </div>
     </div>
 
