@@ -11,25 +11,19 @@
 
     <div class="row">
       <div class="col-md-12">
-        <h5 class="section-heading mt-3 mb-3 tb-3">Sentiment analysis</h5>
+        <h5 class="section-heading mt-3 mb-3 tb-3">Keywords and beer styles</h5>
       </div>
 
       <div class="col-md-12">
         <div class="section-subheading text-justify lead">
-          It is common for people to talk about the disastrous effects of climate change as well as claim that it is
-          nothing to worry about. For this reason it might be interesting to study the patterns of sentiment in what
-          people say. The sentiment of a quote reveals very little about someones opinions on climate change and the
-          message they convey. To illustrate, a person can be in support of the fight against climate change and still
-          make positive as well as negative quotes. For example, talking about how it is as great threat for humanity
-          will return a negative sentiment, but a supporter can also claim that there is hope if we act immediately.
-          Moreover, sentiment analysis can help us inquire into the overall atmosphere of one's statements and possibly
-          see if there are any patterns that may have a subliminal dimension.
-          <br><br>
-          To determine the sentiment we can use a pretrained model from Huggingface. After running this model we append
-          a values between -1 and 1 to each quote. Where negative values imply a negative sentiment and vice versa. This
-          model achieves state-of-the-art accuracy of <a
-            href="https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english">92.7%</a>
-          .
+          ABSA showed that Aroma and Taste are key when people write a review. These aspects 
+          influence the reviews overall. Now we want to go deeper to find out which *aspect
+           characteristics* map into a high rating. We cannot conduct this analysis globally
+            since different beers may have different traits. For example, we expect one to
+             mention citrus notes for a Grape beer and not for an IPA, which is characterized 
+             as bitter. That’s why we conduct our analysis for beer styles individually,
+              but only on those with at least 40k reviews, so that we have enough data points
+               to declare the results valid. There are 15 such beer styles in the dataset.
         </div>
       </div>
 
