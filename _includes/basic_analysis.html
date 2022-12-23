@@ -10,30 +10,39 @@
       </div>
     </div>
     
-
-    <br><br>
-
     <!-- Age Analysis -->
     <div class="row">
       <div class="col-md-12">
         <p class="text-justify lead">
-          So, we can see that number of quotes with respect to age parameter follows a Gaussian-like distribution, with
-          small
-          anomalies. <br>
-          Now, let's see if the age structure changes when we add the aforementioned gender dimensionality.
+          To answer our first question regarding the beer aspects most important to consumers,
+           we conduct <i><u>aspect-based sentiment analysis</i></u> or <i><u>ABSA</i></u>. We do this by conducting 
+           an <i><u>observational study</i></u> between "absolute winner" and "absolute loser" beers, 
+           which we'll explain in a bit. Before that, we have to introduce a preprocessing step. <br>
+          Considering that numerical ratings don't convey proper information about users' attitude
+          towards a beer, we give our BEERT model the context (one of the four beer aspects) and it 
+          provides us with positive/neutral/negative <i><u>sentiment score</i></u> for each aspect from the textual 
+          review. The scores are in the [0,1] interval and sum up to 1. Since we want to determine if a 
+          certain aspect of sentiment exists, we convert each sentiment score to <i><u>indicators</i></u> by setting 
+          up a threshold and comparing them to it. What's more, as we look for aspects with a strong sentiment, 
+          our goal is to have only one of the three aspect-specific indicators present (which means that this 
+          sentiment is dominant) or to have them all being zero (we are not certain that the sentiment is
+          polar enough). This is achieved by a threshold of 0.5 (restricting the other two scores to be at 
+          most 0.5), but to be very confident in our results, we set up a threshold of 0.9.
         </p>
       </div>
 
-      
+      <br>
 
       <div class="col-md-12">
         <p class="text-justify lead">
-          The visual representation of the age analysis with added gender dimensionality for climate change quotes
-          (i.e. the second plot), as
-          well as the <em>mean</em> values, are similar - we could ask ourselves if these
-          two distributions are coming from the same underlying distribution. Since the std values are similar, we can
-          apply the ttest.
+          Our observational study compares two groups of beers: 
+          <u><i>absolute winner</i></u>, with all numerical aspect ratings greater 
+            than an <u><i>absolute loser</i></u> beer. We want to investigate how does each aspect sentiment derived
+             from text influence the overall rating. Therefore, we randomly match pairs of better and worse beers, 
+             but we have to be careful in this process and try to eliminate as many confounders as possible that might 
+             endanger our analysis. Matched beer reviews:
         </p>
+        <br>
         <p class="text-justify lead">
           After getting a p-value = 1.79e-05 (which is less than the ordinary 0.01), we can conclude that the difference in
           the mean values is significant, therefore these two distributions most likely come from two different
